@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro</title>
+    <link rel="stylesheet" href="formulario 2.css">
+</head>
+<body>
+    <div class="campo">
+        <h1 id="titulo">Cadastro</h1>
+        <p id="subtitulo">Complete suas informações
+    </div>
+    <form>
+        <fieldset class="grupo">
+            <div class="campo">
+                <label for="nome">Nome</label>
+                <input type="text" name="nome" id="nome" required minlength="2">
+            </div>
+            <div class="campo">
+                <label for="sobrenome">Sobrenome</label>
+                <input type="text" name="nome" id="sobrenome" required minlength="2">
+            </div>
+            <div class="campo">
+                <label for="email">Email</label>
+                <input type="email" name="email" id="email">
+            </div>
+            <div class="campo">
+                <label>Gênero: </label>
+                <label>
+                    <input type="radio" name="genero" value="masculino">masculino
+                </label>
+                <label>
+                    <input type="radio" name="genero" value="femenino">Femenino
+                </label>
+                <label>
+                    <input type="radio" name="genero" value="outros">Outros
+                </label>
+
+            </div>
+            <div class="campo">
+                <label>Nascimento</label>
+                <input type="date" name="data" id="data">
+            </div>
+        </fieldset>
+        <div class="campo">
+            <label>Local</label>
+            <select name="local" id="local">
+                <option selected disabled value="">Selecione</option>
+                <option value="">São Paulo</option>
+                <option value="">Rio de Janeiro</option>
+                <option value="">Paraná</option>
+            </select>
+        </div>
+        <fieldset class="grupo">
+            <div class="campo">
+                <label>Cargo desejavel</label> <br>
+                <input type="checkbox" id="cargo1" name="cargo1" value="Auxiliar de Produção">
+                <label for="cargo1">Auxiliar de Produção</label>
+                <input type="checkbox" id="cargo2" name="cargo2" value="Técnico de Produção">
+                <label for="cargo2">Técnico de Produção</label>
+                <input type="checkbox" id="cargo3" name="cargo3" value="Gerente de Produção">
+                <label for="cargo3">Grenete de Produção</label>
+            </div>
+        </fieldset>
+        <div class="campo">
+            <label >Experiência</label>
+            <textarea name="experiencia" id="experiencia" cols="30" rows="10"></textarea>
+        </div>
+
+        <button class="botao">Enviar</button>
+        <button class="botao">Voltar</button>
+    </form>
+
+    
+</body>
+</html>
